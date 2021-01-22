@@ -10,7 +10,7 @@ import { grantAccess } from '../../middleware/grantAccess.js'
 
 const router = Router()
 
-router.route('/').post(registerUser)
+router.route('/register').post(registerUser)
 router.post('/login', authUser)
 router
 	.route('/profile')
